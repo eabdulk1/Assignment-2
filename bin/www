@@ -12,7 +12,7 @@ const bcrypt = require("bcrypt");
 
 
 
-const saltRounds = 10;
+const saltRounds = 10; //digt 
 const yourPassword = "mohamed";
 bcrypt.hash(yourPassword, saltRounds, (err, hash) => {
   bcrypt.compare("mohamed", hash, function (err, res) {
